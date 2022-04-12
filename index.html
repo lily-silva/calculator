@@ -1,56 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible"
-        content="IE=edge">
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
+ <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
-  <link rel="stylesheet"
-        href="style.css">
-</head>
+  <link rel="stylesheet" href="style.css" />
+ </head>
 
-<body>
-
-
-
+ <body>
   <div class="container">
-    <div class="main red">
-
-      <section class="screen-area"></section>
-
-      <section class="numpad-area">
-        <div class="numbers red">
-          <div class="numbers-sm">
-            <div class="area1">
-            <div class="num">1</div>
-            <div class="num">2</div>
-            <div class="num">3</div>
-          </div>
-          <div class="area2">
-            <div class="num">4</div>
-            <div class="num">5</div>
-            <div class="num">6</div>
-          </div>
-          <div class="area3">
-            <div class="num">7</div>
-            <div class="num">8</div>
-            <div class="num">9</div>
-          </div>
-          </div>
-          <div class="numbers-lg">
-            <div class="num">0</div>
-          </div>
-        </div>
-        <div class="operands red"></div>
-      </section>
-
-    </div>
+   <div class="main red">
+    <section class="screen-area">
+     <div class="result red">
+      <div class="result-history">2 + 2</div>
+      <div class="result">4</div>
+     </div>
     </section>
 
-    </section>
-</body>
+    <section class="numpad-area">
+     <div class="numpad-area-content">
+      <div class="numbers">
+       <div class="area1">
+        <div class="num">1</div>
+        <div class="num">2</div>
+        <div class="num">3</div>
+       </div>
+       <div class="area2">
+        <div class="num">4</div>
+        <div class="num">5</div>
+        <div class="num">6</div>
+       </div>
+       <div class="area3">
+        <div class="num">7</div>
+        <div class="num">8</div>
+        <div class="num">9</div>
+       </div>
+       <div class="area0">
+        <div class="num num-0">zero</div>
+        <div class="num num-dot">.</div>
+       </div>
+      </div>
 
+      <div class="operands">
+       <div class="areaA">
+        <div class="opr num-clear">clear</div>
+       </div>
+       <div class="areaB">
+        <div class="opr">÷</div>
+        <div class="opr">x</div>
+       </div>
+       <div class="areaC">
+        <div class="opr">-</div>
+        <div class="opr">+</div>
+       </div>
+       <div class="areaD">
+        <div class="opr num-equal">equals</div>
+       </div>
+      </div>
+     </div>
+    </section>
+   </div>
+  </div>
+ </body>
 </html>
