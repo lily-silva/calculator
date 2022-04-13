@@ -1,119 +1,104 @@
-@import url("https://fonts.googleapis.com/css2?family=Anek+Gujarati:wght@300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Anek+Gujarati:wght@300;400;500;600;700&display=swap');
 
 :root {
- font-family: "Anek Gujarati", sans-serif;
- font-weight: 500;
+  font-family: 'Anek Gujarati', sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
 }
 
 .red {
- border: 1px solid black;
+  border: 1px solid black;
 }
 
 .container {
- height: 100vh;
- display: flex;
- align-items: center;
- justify-content: center;
+  height: 100vh;
 }
 
 .main {
- max-width: 450px;
- width: 450px;
- height: 600px;
- border-radius: 15px;
+  max-width: 450px;
+  width: 450px;
+  height: 600px;
+  border-radius: 15px;
 }
 
 .screen-area {
- height: 40%;
- display: flex;
- justify-content: flex-end;
- align-items: flex-end;
+  height: 40%;
 }
 
 .result {
- margin-right: 5%;
- margin-bottom: 5%;
- text-align: end;
+  margin-right: 5%;
+  margin-bottom: 5%;
+  text-align: end;
 }
 
 .numpad-area {
- height: 60%;
- border-top: 1px solid black;
- display: flex;
- justify-content: center;
- align-items: center;
+  height: 60%;
+  border-top: 1px solid black;
 }
 
 .numpad-area-content {
- display: grid;
- grid-template-columns: 60% 40%;
- height: 90%;
- width: 90%;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  height: 90%;
+  width: 90%;
+  gap: 10px
 }
 
 .numbers {
- width: 100%;
- height: 100%;
- display: grid;
- align-items: center;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  align-items: center;
 }
 
 .operands {
- width: 100%;
- height: 100%;
- display: grid;
- align-items: center;
- justify-content: end;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
 }
 
 .area1,
 .area2,
 .area3,
 .area0 {
- gap: 15px;
- display: grid;
- grid-template-columns: repeat(3, 1fr);
- width: 100%;
+  gap: 5px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
 }
 
 .num {
- width: 70px;
- height: 55px;
- border: 1px solid blue;
- justify-content: center;
- align-items: flex-end;
- display: flex;
- border-radius: 5px;
- font-size: 2rem;
+  width: 70px;
+  height: 55px;
+  border-radius: 5px;
 }
 
 .num-0 {
- grid-column: 1 / span 2;
- width: 98%;
+  grid-column: 1 / span 2;
+  width: 98%;
 }
 
 .opr {
- width: 60px;
- height: 55px;
- border: 1px solid green;
- justify-content: center;
- align-items: flex-end;
- display: flex;
- border-radius: 5px;
- font-size: 1.5rem;
+  width: 60px;
+  height: 55px;
+  border-radius: 5px;
 }
 
 .num-clear,
 .num-equal {
- grid-column: 1 / span 2;
- width: 100%;
+  grid-column: 1 / span 2;
+  width: 100%;
 }
 
 .areaA,
 .areaB,
 .areaC,
 .areaD {
- display: grid;
- grid-template-columns: repeat(2, auto);
- gap: 15px;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  justify-content: space-between;
+  width: 90%;
+  gap:10px
 }
