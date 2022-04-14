@@ -33,6 +33,7 @@
 
 .total {
   font-size: 3rem;
+  margin-top: -20px;
 }
 
 .numpad-area {
@@ -95,8 +96,6 @@
   grid-column: 1 / span 2;
   width: 141px;
 }
-
-
 
 .areaA,
 .areaB,
