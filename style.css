@@ -6,10 +6,6 @@
   font-size: 2rem;
 }
 
-.red {
-  border: 1px solid black;
-}
-
 .container {
   height: 100vh;
 }
@@ -31,14 +27,22 @@
   text-align: end;
 }
 
+.result-history {
+  font-size: 0.8rem;
+}
+
+.total {
+  font-size: 3rem;
+}
+
 .numpad-area {
   height: 60%;
-  border-top: 1px solid black;
+  border-radius: 15px;
 }
 
 .numpad-area-content {
   display: grid;
-  grid-template-columns: 60% 40%;
+  grid-template-columns: 250px auto;
   height: 90%;
   width: 90%;
   gap: 10px
@@ -77,7 +81,7 @@
 
 .num-0 {
   grid-column: 1 / span 2;
-  width: 98%;
+  width: 153px;
 }
 
 .opr {
@@ -89,12 +93,10 @@
 .num-clear,
 .num-equal {
   grid-column: 1 / span 2;
-  width: 100%;
+  width: 141px;
 }
 
-.num-equal {
-  width: 145px;
-}
+
 
 .areaA,
 .areaB,
