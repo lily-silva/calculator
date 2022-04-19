@@ -5,58 +5,134 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
 
-  <body>
-    <div class="container is-flex is-justify-content-center is-align-items-center">
-      <div class="main has-background-warning-light ">
-        <section class=" screen-area is-flex is-justify-content-end is-align-items-end">
+  <body onload="vals()">
+    <div
+      class="container is-flex is-justify-content-center is-align-items-center"
+    >
+      <div class="main has-background-warning-light">
+        <section
+          class="screen-area is-flex is-justify-content-end is-align-items-end"
+        >
           <div class="result">
-            <div class="result-history">2 + 2</div>
-            <div class="total">4</div>
+            <!-- <div class="result-history">2 + 2</div> -->
+            <div class="total" id="total"></div>
           </div>
         </section>
 
-        <section class=" has-background-primary-light numpad-area is-flex is-justify-content-center is-align-items-center">
+        <section
+          class="has-background-primary-light numpad-area is-flex is-justify-content-center is-align-items-center"
+        >
           <div class="numpad-area-content">
             <div class="numbers">
               <div class="area1">
-                <button class="button is-primary num is-flex is-justify-content-center is-align-items-center">1</button>
-                <button class="button is-primary num is-flex is-justify-content-center is-align-items-center">2</button>
-                <button class="button is-primary num is-flex is-justify-content-center is-align-items-center">3</button>
+                <button
+                  class="button is-primary num is-flex is-justify-content-center is-align-items-center"
+                >
+                  1
+                </button>
+                <button
+                  class="button is-primary num is-flex is-justify-content-center is-align-items-center"
+                >
+                  2
+                </button>
+                <button
+                  class="button is-primary num is-flex is-justify-content-center is-align-items-center"
+                >
+                  3
+                </button>
               </div>
               <div class="area2">
-                <button class="button is-primary num is-flex is-justify-content-center is-align-items-center">4</button>
-                <button class="button is-primary num is-flex is-justify-content-center is-align-items-center">5</button>
-                <button class="button is-primary num is-flex is-justify-content-center is-align-items-center">6</button>
+                <button
+                  class="button is-primary num is-flex is-justify-content-center is-align-items-center"
+                >
+                  4
+                </button>
+                <button
+                  class="button is-primary num is-flex is-justify-content-center is-align-items-center"
+                >
+                  5
+                </button>
+                <button
+                  class="button is-primary num is-flex is-justify-content-center is-align-items-center"
+                >
+                  6
+                </button>
               </div>
               <div class="area3">
-                <button class="button is-primary num is-flex is-justify-content-center is-align-items-center">7</button>
-                <button class="button is-primary num is-flex is-justify-content-center is-align-items-center">8</button>
-                <button class="button is-primary num is-flex is-justify-content-center is-align-items-center">9</button>
+                <button
+                  class="button is-primary num is-flex is-justify-content-center is-align-items-center"
+                >
+                  7
+                </button>
+                <button
+                  class="button is-primary num is-flex is-justify-content-center is-align-items-center"
+                >
+                  8
+                </button>
+                <button
+                  class="button is-primary num is-flex is-justify-content-center is-align-items-center"
+                >
+                  9
+                </button>
               </div>
               <div class="area0">
-                <button class="button is-primary num is-flex is-justify-content-center is-align-items-center num-0">zero</button>
-                <button class="button is-primary num is-flex is-justify-content-center is-align-items-end num-dot">.</button>
+                <button
+                  class="button is-primary num is-flex is-justify-content-center is-align-items-center num-0"
+                >
+                  0
+                </button>
+                <button
+                  class="button is-primary num is-flex is-justify-content-center is-align-items-end num-dot"
+                >
+                  .
+                </button>
               </div>
             </div>
 
             <div class="operands">
               <div class="areaA">
-                <button class="button is-warning opr is-flex is-justify-content-center is-align-items-center num-clear">clear</button>
+                <button
+                  class="button is-warning opr is-flex is-justify-content-center is-align-items-center num-clear"
+                >
+                  clear
+                </button>
               </div>
               <div class="areaB">
-                <button class="button is-warning opr is-flex is-justify-content-center is-align-items-center">÷</button>
-                <button class="button is-warning opr is-flex is-justify-content-center is-align-items-center">×</button>
+                <button
+                  class="button is-warning opr math is-flex is-justify-content-center is-align-items-center" id="divide"
+                >
+                  ÷
+                </button>
+                <button
+                  class="button is-warning opr math is-flex is-justify-content-center is-align-items-center" id="multiply"
+                >
+                  ×
+                </button>
               </div>
               <div class="areaC">
-                <button class="button is-warning opr is-flex is-justify-content-center is-align-items-center">-</button>
-                <button class="button is-warning opr is-flex is-justify-content-center is-align-items-center">+</button>
+                <button
+                  class="button is-warning opr math is-flex is-justify-content-center is-align-items-center" id="subtract"
+                >
+                  -
+                </button>
+                <button
+                  class="button is-warning opr math is-flex is-justify-content-center is-align-items-center" id="add"
+                >
+                  +
+                </button>
               </div>
               <div class="areaD">
-                <button class="button is-warning opr is-flex is-justify-content-center is-align-items-center num-equal">equals</button>
+                <button
+                  class="button is-warning opr is-flex is-justify-content-center is-align-items-center num-equal" id="equals" onclick="equals()">
+                  equals
+                </button>
               </div>
             </div>
           </div>
