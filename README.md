@@ -16,6 +16,7 @@ This is a simple calculator built with HTML, CSS, and JavaScript within The Odin
 ## Usage
 
 Simply enter the numbers and operators using the buttons provided on the calculator. The result will be displayed on the screen. Press the clear button to clear the input field. Press the equals button to evaluate the expression.
+It can be accessed in [https://lily-silva.github.io/calculator/](https://lily-silva.github.io/calculator/)
 
 ## Technologies Used
 
